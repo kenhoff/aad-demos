@@ -1,0 +1,22 @@
+{
+  "name": "aad-demos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kenhoff/aad-demos.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenhoff/aad-demos/issues"
+  },
+  "homepage": "https://github.com/kenhoff/aad-demos",
+  "dependencies": {
+    "harp": "^0.15.2"
+  }
+}
