@@ -22,6 +22,8 @@
 #### General Rules
 - screenshots encouraged
 - this is *public-facing* documentation - no business-impacting material
+- check out existing demo scripts for guidance
+- there's *always* exceptions to the rule - open an issue if you have any questions - for business-impacting stuff email kenhoff@microsoft.com
 
 Two sections:
 
