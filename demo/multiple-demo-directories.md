@@ -24,7 +24,7 @@ Note: "Parent" and "Child" directories are functionally identical. Conceptually,
   - note that it will be possible for each of the demo directory admins to create azure resources (will incur costs)
     - to avoid this, it's possible to use a $0 subscription, but you'll have to contact Eran Dvir about that
 - assign the MSA as the service admin for the subscription
-  - at https://account.windowsazure.com, Subscriptions -> <your subscription> -> Edit subscription details -> set Service Administrator to the MSA's email
+  - at https://account.windowsazure.com, Subscriptions -> {your subscription} -> Edit subscription details -> set Service Administrator to the MSA's email
 - sign into the [management portal](https://manage.windowsazure.com/) with the MSA
 - create a parent directory (New -> App Services -> Active Directory -> Directory -> Custom Create)
   - choose the name carefully - the users will be named after this directory
@@ -32,10 +32,10 @@ Note: "Parent" and "Child" directories are functionally identical. Conceptually,
   - you'll need to use [LCA-approved fictitious names](https://microsoft.sharepoint.com/sites/lcaweb/Pages/Applications/FictitiousNameFinder.aspx)
   - (recommended) this can be [done in bulk](http://blogs.technet.com/b/heyscriptingguy/archive/2014/08/04/use-powershell-to-create-bulk-users-for-office-365.aspx) 
   - set the user passwords (recommended: ```Microsoft123!``` - your users will be typing this a lot, and it's more useful to be easy than secure), and set them to never expire
-- assign each of those users as a coadmin of that azure subscription (Azure Management Portal -> Settings -> Administrators -> Add)
+- assign each of those users as a coadmin of that azure subscription (Azure Management Portal -> Settings (left navigation) -> Administrators -> Add)
 - with each user, log in and create a child directory
   - if you need to be able to log into a different management portal (e.g. O365, Intune), then you'll need to create an additional global admin in the child directory
-- (optional) activate the Azure AD trial for each child directory (Azure Management Portal -> [your child directory] -> Licenses -> Activate)
+- (optional) activate the Azure AD trial for each child directory (Azure Management Portal -> {your child directory} -> Licenses -> Activate)
 - (optional) configure each child directory to your specifications
   - check out some of the other [demo scripts available](/demo)
 
