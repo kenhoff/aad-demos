@@ -8,11 +8,13 @@ Last Reviewed:  2015.02.23
 
 Sometimes setting up multiple directories for concurrent use is necessary, either for demonstration, training, or testing. It's not a trivial matter; there's a complicated combination of subscriptions, admins, and licenses that are needed. These steps will make the process more transparent. 
 
+Because a user must be associated with an Azure Subscription in order to sign into the Azure Management Portal, and it is impractical and insecure to create a large number of Azure Subscriptions, we will be creating one Azure Subscription with every demo admin as a co-administrator of that Azure Subscription.
+
 If you run into issues, or you'd like guidance with the process, feel free to get in touch at kenhoff@microsoft.com.
 
 ## Demo Setup
 
-Difference between parent and child directories: no technical difference, just conceptual
+Note: "Parent" and "Child" directories are functionally identical. Conceptually, each demo directory is a "child" directory, while all of the admins are mastered in the "parent" directory.
 
 - [create an MSA](https://signup.live.com)
 - set up an azure subscription - 3 options:
