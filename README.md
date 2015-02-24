@@ -33,7 +33,7 @@ Last Reviewed:  2015.02.23
 - no completion time limit - some demos are complex, so setup can take as long as it needs to
 - make it as end-to-end as possible, but omit trivial material and link to other demos as necessary
  
-##### Walkthrough
+##### Demo Walkthrough
 - completable in 2-5 minutes
 - *show*, but don't *do* config - "like a cooking show"
 - include speaker instructions *and* speaker talking points
