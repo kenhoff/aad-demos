@@ -6,9 +6,9 @@ Last Reviewed:  2015.02.23
 
 # Setting up multiple demo directories
 
-Sometimes, setting up multiple directories for concurrent use is necessary, be it for demonstration, training, or testing use. It's not a trivial matter; there's a complicated combination of subscriptions, admins, and licenses. These steps will make the process more transparent. 
+Sometimes setting up multiple directories for concurrent use is necessary, either for demonstration, training, or testing. It's not a trivial matter; there's a complicated combination of subscriptions, admins, and licenses that are needed. These steps will make the process more transparent. 
 
-If you run into issues, or you'd like assistance getting started, feel free to get in touch at kenhoff@microsoft.com.
+If you run into issues, or you'd like guidance with the process, feel free to get in touch at kenhoff@microsoft.com.
 
 ## Demo Setup
 
@@ -16,11 +16,11 @@ Difference between parent and child directories: no technical difference, just c
 
 - create an MSA
 - set up an azure subscription
-  - (recommended) use an internal subscription
-  - use the MSDN subscription
-  - pay for/activate a trial azure subscription
+  - (recommended) use an [internal subscription](https://azuremsregistration.cloudapp.net/Default.aspx)
+  - use the [MSDN subscription](http://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits/)
+  - pay for/activate a [trial azure subscription](http://azure.microsoft.com/en-us/pricing/free-trial/) (credit card needed)
   - note that it will be possible for each of the demo directory admins to create azure resources (will incur costs)
-    - it's possible to use a $0 subscription, but you'll have to contact Eran Dvir about that
+    - to avoid this, it's possible to use a $0 subscription, but you'll have to contact Eran Dvir about that
 - assign the MSA as the service admin for the subscription
 - sign into the management portal with the MSA
 - create a parent directory 
