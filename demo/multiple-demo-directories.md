@@ -27,14 +27,17 @@ Difference between parent and child directories: no technical difference, just c
 - create a parent directory (New -> App Services -> Active Directory -> Directory -> Custom Create)
   - choose the name carefully - the users will be named after this directory
 - create 200 users in that parent directory
-  - (recommended) this can be done in bulk (powershell link)
+  - you'll need to use [LCA-approved fictitious names](https://microsoft.sharepoint.com/sites/lcaweb/Pages/Applications/FictitiousNameFinder.aspx)
+  - (recommended) this can be [done in bulk](http://blogs.technet.com/b/heyscriptingguy/archive/2014/08/04/use-powershell-to-create-bulk-users-for-office-365.aspx) 
   - set the user passwords (recommended: ```Microsoft123!``` - your users will be typing this a lot, and it's more useful to be easy than secure), and set them to never expire
-- assign each of those users as a coadmin of that azure subscription
+- assign each of those users as a coadmin of that azure subscription (Azure Management Portal -> Settings (on the left bar) -> Administrators -> Add)
 - with each user, log in and create a child directory
   - if you need to be able to log into a different management portal (e.g. O365, Intune), then you'll need to create an additional global admin in the child directory
-- (optional) activate the Azure AD trial for each child directory
+- (optional) activate the Azure AD trial for each child directory (Azure Management Portal -> <your child directory> -> Licenses -> Activate)
 - (optional) configure each child directory to your specifications
+  - check out some of the other [demo scripts available](/demo)
 
 ## Demo Walkthrough
 
 - log in with one of the admin users and note that only the child directory can be accessed
+- provide your users with the credentials to access the demo directories
