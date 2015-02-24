@@ -35,7 +35,7 @@ Note: "Parent" and "Child" directories are functionally identical. Conceptually,
 - assign each of those users as a coadmin of that azure subscription (Azure Management Portal -> Settings -> Administrators -> Add)
 - with each user, log in and create a child directory
   - if you need to be able to log into a different management portal (e.g. O365, Intune), then you'll need to create an additional global admin in the child directory
-- (optional) activate the Azure AD trial for each child directory (Azure Management Portal -> <your child directory> -> Licenses -> Activate)
+- (optional) activate the Azure AD trial for each child directory (Azure Management Portal -> (your child directory) -> Licenses -> Activate)
 - (optional) configure each child directory to your specifications
   - check out some of the other [demo scripts available](/demo)
 
