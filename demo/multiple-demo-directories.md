@@ -4,7 +4,7 @@ Owner DL:       adiampm
 Last Reviewed:  2015.02.23
 --->
 
-# Setting up multiple directories for demo purposes
+# Setting up multiple demo directories
 
 Sometimes, setting up multiple directories for concurrent use is necessary, be it for demonstration, training, or testing use. It's not a trivial matter, but hopefully these steps will make the process more transparent. 
 
