@@ -28,8 +28,10 @@ Two sections:
 #### Setup
 - no completion time limit - some demos are complex, so setup can take as long as it needs to
 - make it as end-to-end as possible, but omit trivial material and link to other demos as necessary
+
 #### Walkthrough
 - completable in 2-5 minutes
 - *show*, but don't *do* config
 - include speaker instructions *and* speaker talking points
+
 ### Pull Request Checklist
