@@ -26,7 +26,7 @@ You’re limited to one regular Salesforce user, but you have plenty of Chatter 
 1.	Go to https://developer.salesforce.com/
 2.	Click Sign-up to create a new account, and follow the steps for creating and verifying your account.
 3.	Once your account has been activated, go to https://www.salesforce.com/ and Log in
-	a.	Note: Sign into salesforce.com, as opposed to developer.salesforce.com
+  a.	Note: Sign into salesforce.com, as opposed to developer.salesforce.com
 4.	Under Administer, go to Domain Management > My Domain
 **(image)**
 5.	Choose a domain name for your demo account. It will be in the format of http://mydomain-dev-ed.my.salesforce.com
