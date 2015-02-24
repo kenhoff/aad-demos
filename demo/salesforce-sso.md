@@ -16,15 +16,19 @@ description
 ### Creating a Salesforce Demo Account
 
 Rather than creating a “real” Salesforce account, it’s far easier and faster to create a developer account that behaves like a real account.
+
 Of course there are a few caveats with respect to how many licenses you have:
- (image)
+
+**(image)**
+
 You’re limited to one regular Salesforce user, but you have plenty of Chatter Free users.
+
 1.	Go to https://developer.salesforce.com/
 2.	Click Sign-up to create a new account, and follow the steps for creating and verifying your account.
 3.	Once your account has been activated, go to https://www.salesforce.com/ and Log in
-a.	Note: Sign into salesforce.com, as opposed to developer.salesforce.com
+	a.	Note: Sign into salesforce.com, as opposed to developer.salesforce.com
 4.	Under Administer, go to Domain Management > My Domain
-(image)
+**(image)**
 5.	Choose a domain name for your demo account. It will be in the format of http://mydomain-dev-ed.my.salesforce.com
 6.	You can now treat your developer account like a Salesforce account 
 
@@ -32,6 +36,7 @@ a.	Note: Sign into salesforce.com, as opposed to developer.salesforce.com
 ### Populating your Salesforce Account with Users
 
 Several options:
+
 1.	If you have an Azure AD tenant filled with users, you can set up automatic user provisioning to Salesforce:
 https://msdn.microsoft.com/en-us/library/azure/dn308593.aspx#BKMK_ConfiguringAccountSync
 2.	If you only need a handful of users, you can add them manually with their “Add Multiple Users” feature:
