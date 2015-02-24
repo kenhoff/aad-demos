@@ -14,7 +14,7 @@ If you run into issues, or you'd like guidance with the process, feel free to ge
 
 Difference between parent and child directories: no technical difference, just conceptual
 
-- create an MSA
+- [create an MSA](https://signup.live.com)
 - set up an azure subscription
   - (recommended) use an [internal subscription](https://azuremsregistration.cloudapp.net/Default.aspx)
   - use the [MSDN subscription](http://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits/)
@@ -22,12 +22,13 @@ Difference between parent and child directories: no technical difference, just c
   - note that it will be possible for each of the demo directory admins to create azure resources (will incur costs)
     - to avoid this, it's possible to use a $0 subscription, but you'll have to contact Eran Dvir about that
 - assign the MSA as the service admin for the subscription
-- sign into the management portal with the MSA
-- create a parent directory 
+  - at https://account.windowsazure.com, Subscriptions -> <your subscription> -> Edit subscription details -> set Service Administrator to the MSA's email
+- sign into the [management portal](https://manage.windowsazure.com/) with the MSA
+- create a parent directory (New -> App Services -> Active Directory -> Directory -> Custom Create)
   - choose the name carefully - the users will be named after this directory
 - create 200 users in that parent directory
   - (recommended) this can be done in bulk (powershell link)
-  - set the user passwords (recommended: ```Microsoft123!```), and set them to never expire
+  - set the user passwords (recommended: ```Microsoft123!``` - your users will be typing this a lot, and it's more useful to be easy than secure), and set them to never expire
 - assign each of those users as a coadmin of that azure subscription
 - with each user, log in and create a child directory
   - if you need to be able to log into a different management portal (e.g. O365, Intune), then you'll need to create an additional global admin in the child directory
