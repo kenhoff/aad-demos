@@ -14,6 +14,7 @@ description
 ## Demo Setup
 
 ### Creating a Salesforce Demo Account
+
 Rather than creating a “real” Salesforce account, it’s far easier and faster to create a developer account that behaves like a real account.
 Of course there are a few caveats with respect to how many licenses you have:
  (image)
