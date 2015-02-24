@@ -19,22 +19,22 @@
 
 ### Things your demo should include
 
+#### Two sections:
+
+##### Demo Setup
+- no completion time limit - some demos are complex, so setup can take as long as it needs to
+- make it as end-to-end as possible, but omit trivial material and link to other demos as necessary
+ 
+##### Walkthrough
+- completable in 2-5 minutes
+- *show*, but don't *do* config - "like a cooking show"
+- include speaker instructions *and* speaker talking points
+
 #### General Rules
 - screenshots encouraged
 - this is *public-facing* documentation - no business-impacting material
 - check out existing demo scripts for guidance
 - there's *always* exceptions to the rule - open an issue if you have any questions - for business-impacting stuff email kenhoff@microsoft.com
-
-Two sections:
-
-#### Setup
-- no completion time limit - some demos are complex, so setup can take as long as it needs to
-- make it as end-to-end as possible, but omit trivial material and link to other demos as necessary
-
-#### Walkthrough
-- completable in 2-5 minutes
-- *show*, but don't *do* config - "like a cooking show"
-- include speaker instructions *and* speaker talking points
 
 ### Pull Request Checklist
 
