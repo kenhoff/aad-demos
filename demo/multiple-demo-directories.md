@@ -15,7 +15,7 @@ If you run into issues, or you'd like guidance with the process, feel free to ge
 Difference between parent and child directories: no technical difference, just conceptual
 
 - [create an MSA](https://signup.live.com)
-- set up an azure subscription
+- set up an azure subscription - 3 options:
   - (recommended) use an [internal subscription](https://azuremsregistration.cloudapp.net/Default.aspx)
   - use the [MSDN subscription](http://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits/)
   - pay for/activate a [trial azure subscription](http://azure.microsoft.com/en-us/pricing/free-trial/) (credit card needed)
