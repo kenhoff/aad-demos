@@ -36,6 +36,7 @@ Note: "Parent" and "Child" directories are functionally identical. Conceptually,
 - with each user, log in and create a child directory
   - if you need to be able to log into a different management portal (e.g. O365, Intune), then you'll need to create an additional global admin in the child directory
 - (optional) activate the Azure AD trial for each child directory (Azure Management Portal -> {your child directory} -> Licenses -> Activate)
+- [o365](https://microsoft.sharepoint.com/teams/office365demos/Lists/Demo%20Account%20Extension%20Requests/Item/newifs.aspx?List=32418e74-18aa-48e4-a257-b061e0c7ab4d&Source=https%3A%2F%2Fmicrosoft%2Esharepoint%2Ecom%2Fteams%2Foffice365demos%2FLists%2FDemo%20Account%20Extension%20Requests&Web=f9ec1306-1519-4a4d-a132-a5077e9f900e&InitialTabId=Ribbon%2ERead&VisibilityContext=WSSTabPersistence#InplviewHashdc12fa55-37ed-4b7e-bc8e-75640c2a74e7=ShowInGrid%3DTrue)
 - (optional) configure each child directory to your specifications
   - check out some of the other [demo scripts available](/demo)
 
