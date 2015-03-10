@@ -10,9 +10,11 @@ html
 			.page-header
 				h1 Azure AD Demo Scripts
 				h5 A collection of setup and walkthrough scripts, built by the product team, on how to demo Azure AD
+			- if (typeof(title) !== 'undefined') {	
 			ul.breadcrumb
 				li: a(href = "/demo") Demo scripts
 				- if (typeof(title) !== 'undefined') {
 				li.active #{title}
 				- }
+			- }
 			!= yield
