@@ -19,18 +19,20 @@ Rather than creating a “real” Salesforce account, it’s far easier and fast
 
 Of course there are a few caveats with respect to how many licenses you have:
 
-**(image)**
+![](/img/salesforce-sso/licenses.png)
 
 You’re limited to one regular Salesforce user, but you have plenty of Chatter Free users.
 
 1.	Go to https://developer.salesforce.com/
 2.	Click Sign-up to create a new account, and follow the steps for creating and verifying your account.
 3.	Once your account has been activated, go to https://www.salesforce.com/ and Log in
-  a.	Note: Sign into salesforce.com, as opposed to developer.salesforce.com
+  -	Note: Sign into salesforce.com, as opposed to developer.salesforce.com
 4.	Under Administer, go to Domain Management > My Domain
-**(image)**
-5.	Choose a domain name for your demo account. It will be in the format of http://mydomain-dev-ed.my.salesforce.com
-6.	You can now treat your developer account like a Salesforce account 
+	
+  - ![](/img/salesforce-sso/administer.png)
+
+6.	Choose a domain name for your demo account. It will be in the format of http://mydomain-dev-ed.my.salesforce.com
+7.	You can now treat your developer account like a Salesforce account 
 
 
 ### Populating your Salesforce Account with Users
@@ -44,10 +46,11 @@ https://help.salesforce.com/HTViewHelpDoc?id=users_adding_multiple.htm&language=
 
 ### Connecting your Salesforce Account to Azure AD
 
-1.	Follow this guide:
+3.	Follow this guide:
 https://msdn.microsoft.com/en-us/library/azure/dn308593.aspx#BKMK_ConfiguringAccountSync
-2.	Now you need to assign users to the app. In the Azure Management Portal, you can do this by going to Your Directory > Applications > Salesforce > Users.
-3.	Designate one user who will be used in the demo. Make sure you have the login credentials for that user. Assign that user to Salesforce.
+4.	Now you need to assign users to the app. In the Azure Management Portal, you can do this by going to Your Directory > Applications > Salesforce > Users.
+  - ![](/img/salesforce-sso/assignUsers.jpg)
+5.	Designate one user who will be used in the demo. Make sure you have the login credentials for that user. Assign that user to Salesforce.
 
 
 
@@ -58,13 +61,13 @@ https://msdn.microsoft.com/en-us/library/azure/dn308593.aspx#BKMK_ConfiguringAcc
 
 1.	In the Azure Management portal, go to Your Directory > Applications > Salesforce.
 2.	On the Quick Start screen for Salesforce, click on “Configure single sign-on”. Walk through the pages of the wizard (which have already been filled out), and talk about how it’s been configured.
-  a.	First page shows that we’re using federation-based SSO
-  b.	Second page specified the sign-on URL for our Salesforce account.
-  c.	Third page shows the configurations that had to be made on the Salesforce side to allow for SSO.
-  d.	Exit the wizard.
-3.	Click on “configure user provisioning”
-  a.	First page shows the admin credentials that are used by Azure AD to provision and deprovision users into our Salesforce account.
-  b.	Second page allows us to subscribe to email notifications for urgent provisioning errors.
+  3.	First page shows that we’re using federation-based SSO
+  4.	Second page specified the sign-on URL for our Salesforce account.
+  5.	Third page shows the configurations that had to be made on the Salesforce side to allow for SSO.
+  6.	Exit the wizard.
+7.	Click on “configure user provisioning”
+  8.	First page shows the admin credentials that are used by Azure AD to provision and deprovision users into our Salesforce account.
+  9.	Second page allows us to subscribe to email notifications for urgent provisioning errors.
 
 ### End-User Side: show SSO in action
 
