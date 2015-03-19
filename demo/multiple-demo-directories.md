@@ -16,6 +16,13 @@ If you run into issues, or you'd like guidance with the process, feel free to ge
 
 Note: "Parent" and "Child" directories are functionally identical. Conceptually, each demo directory is a "child" directory, while all of the admins are mastered in the "parent" directory.
 
+### Creating the parent directory
+- Email Eran Dvir - ask him for a 1-user IUR key.
+- Navigate to http://aka.ms/activateAAD and begin the sign up process. This will create the parent directory, the global admin of your parent directory, and make the parent directory the default directory of a $0 Azure subscription.
+  - You may want to choose your directory name carefully; your users will have to sign in with usernames like admin123@superlongdirectoryname.onmicrosoft.com  
+
+#### Alternative method:
+
 - [create an MSA](https://signup.live.com)
 - set up an azure subscription - 3 options:
   - (recommended) use an [internal subscription](https://azuremsregistration.cloudapp.net/Default.aspx)
@@ -28,15 +35,32 @@ Note: "Parent" and "Child" directories are functionally identical. Conceptually,
 - sign into the [management portal](https://manage.windowsazure.com/) with the MSA
 - create a parent directory (New -> App Services -> Active Directory -> Directory -> Custom Create)
   - choose the name carefully - the users will be named after this directory
+ 
+### Creating the users in your parent directory (which will be the admins for the child directory)
+
 - create 200 users in that parent directory
   - you'll need to use [LCA-approved fictitious names](https://microsoft.sharepoint.com/sites/lcaweb/Pages/Applications/FictitiousNameFinder.aspx)
   - (recommended) this can be [done in bulk](http://blogs.technet.com/b/heyscriptingguy/archive/2014/08/04/use-powershell-to-create-bulk-users-for-office-365.aspx) 
   - set the user passwords (recommended: ```Microsoft123!``` - your users will be typing this a lot, and it's more useful to be easy than secure), and set them to never expire
+
+### Making those users able to log into the Azure Management Portal
+
 - assign each of those users as a coadmin of that azure subscription (Azure Management Portal -> Settings (left navigation) -> Administrators -> Add)
+ 
+### Creating the child directory for each child admin
+
 - with each user, log in and create a child directory
+
+#### Additional step: creating another admin to log into other management portals  
+
   - if you need to be able to log into a different management portal (e.g. O365, Intune), then you'll need to create an additional global admin in the child directory
+  
+### Activating trials on each directory
 - (optional) activate the Azure AD trial for each child directory (Azure Management Portal -> {your child directory} -> Licenses -> Activate)
 - [o365](https://microsoft.sharepoint.com/teams/office365demos/Lists/Demo%20Account%20Extension%20Requests/Item/newifs.aspx?List=32418e74-18aa-48e4-a257-b061e0c7ab4d&Source=https%3A%2F%2Fmicrosoft%2Esharepoint%2Ecom%2Fteams%2Foffice365demos%2FLists%2FDemo%20Account%20Extension%20Requests&Web=f9ec1306-1519-4a4d-a132-a5077e9f900e&InitialTabId=Ribbon%2ERead&VisibilityContext=WSSTabPersistence#InplviewHashdc12fa55-37ed-4b7e-bc8e-75640c2a74e7=ShowInGrid%3DTrue)
+
+### Configuring each directory with the right data and enabled features
+
 - (optional) configure each child directory to your specifications
   - check out some of the other [demo scripts available](/demo)
 
