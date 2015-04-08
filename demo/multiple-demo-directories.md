@@ -64,6 +64,17 @@ Note: "Parent" and "Child" directories are functionally identical. Conceptually,
 - (optional) configure each child directory to your specifications
   - check out some of the other [demo scripts available](/demo)
 - verify your corp domain: [msinterface](http://msinterface/form.aspx?ID=3890)
+<!---
+[4/8/2015 3:39 PM] Andreas Kjellman: 
+DNS configuration instructions for MSInterface
+ 
+1.       Please visit http://msinterface/form.aspx?ID=3890 (if this opens up the home page, please try clicking the link again)
+2.       In the “Request Categories” dropdown choose “Non AD Integrated (Internet Facing) Request” 
+3.      Enter “GFS-Domains” in the “MSIdentity Application Name” field
+4.      Complete the required fields marked with *
+5.      Once you have completed the form, click “Submit Form”
+--->
+
 
 ## Demo Walkthrough
 
