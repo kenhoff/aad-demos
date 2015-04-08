@@ -63,6 +63,7 @@ Note: "Parent" and "Child" directories are functionally identical. Conceptually,
 
 - (optional) configure each child directory to your specifications
   - check out some of the other [demo scripts available](/demo)
+- verify your corp domain: [msinterface](http://msinterface/form.aspx?ID=3890)
 
 ## Demo Walkthrough
 
